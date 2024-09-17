@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+.logo img{
+   
+width: 40px; 
+height: auto;
+margin-right: 10px; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+    display: flex;
+    flex-direction: row;
+}
+.logo h1 {
+font-size: 24px; 
+font-weight: 600;
+color: black;
+}
+.logo h1 span {
+color: #28CB8B; 
+}
+.logo img {
+width: 50px; 
+height: 60px;
+margin-right: 10px; 
+}
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn-outline {
+    border: 1px solid #4CAF50;
+    color: #4CAF50;
+}
+.btn-primary {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #e9f7ef;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 0;
+}
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.testimonial-card img {
+    width: 90px;
+    height: 75px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.testimonial-card h3 {
+    margin-bottom: 10px;
+}
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.rating {
+    color: #FFD700;
+}
+.test{
+    font-weight: bold; 
+    text-decoration: underline ;
+    text-decoration: dotted; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+   
+}
+
+header {
+    background-color: #ffffff;
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #18191F;
+   
+}
+.home {
+    font-weight: bold; 
+    text-decoration: underline; 
+}
+
+.nav-links li {
+    margin: 57px 14px;
+}
+
+.nav-links a:hover {
+    color: #008000;
+}
+.login{
+    display: flex;
+    gap: 14px;
+    
+}
+.btn {
+    background-color: #28CB8B; /* Matches the green in the image */
+    color: #ffffff;
+    padding: 14px 32px; /* Adjusted padding for better spacing */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none; /* Removes underline */
+    font-size: 16px; /* Consistent font size */
+}
+
+.btn:hover {
+    background-color: #1fa475; /* Slightly darker green on hover */
+}
+
+.btn1 {
+    background-color: #ffffff;
+    color: #28CB8B;
+    padding: 14px 32px; /* Adjusted padding for better spacing */
+    border: 2px solid #28CB8B; /* Border matches the text color */
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.btn-primary {
+    background-color: #28CB8B;
+    color: #fdfdfd;
+    padding: 14px 32px; /* Adjusted padding for better spacing */
+    border: 2px solid  /* Border matches the text color */
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.btn1:hover {
+    background-color: #f0f0f0;
+     /* Light gray hover effect */
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px; 
+}
+
+.logo h1 {
+    font-size: 24px; 
+    font-weight: 600;
+    color: black;
+}
+.logo h1 span {
+    color: #28CB8B; 
+}
+@media screen and (max-width: 768px) {
+    nav {
+        margin-bottom: -80px;
+        justify-content: space-between;
+        padding: 10px;
+        margin-top: -60px;
+    }
+
+    .logo {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav-links {
+        flex-basis: 70%;
+        justify-content: flex-start;
+        gap: 0px;
+        font-size: 12px;
+    }
+
+    .login {
+        flex-basis: 30%;
+        justify-content: flex-end;
+        gap: 4px;
+        margin-left: -7px;
+    }
+
+    .btn1, .btn-primary {
+        padding: 6px 10px;
+        font-size: 12px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        border-radius: 5px;
+    }
+}

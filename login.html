@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+
+  <div class="card">
+    <div class="card-header">
+      <img src="../Images/LogoMark.PNG" alt="CourrGen Logo">
+      <h2>Log in to CourzGen</h2>
+    </div>
+    <div class="card-content">
+      <form onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn">Log In</button>
+      </form>
+    </div>
+    <div class="card-footer">
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </div>
+
+  <script>
+    function handleLogin(event) {
+      event.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      console.log('Login attempted with:', email, password);
+    }
+  </script>
+
+</body>
+</html>
